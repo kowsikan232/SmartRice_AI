@@ -1,0 +1,27 @@
+======================================================================
+SMART RICE AI - PHASE 1: RICE VARIETY TEST CLASSIFICATION REPORT
+======================================================================
+
+Model:               MobileNetV2 (Transfer Learning)
+Test Samples:        750
+Overall Accuracy:    98.8000%
+Macro Precision:     98.8131%
+Macro Recall:        98.8000%
+Macro F1-Score:      98.8035%
+Weighted Precision:  98.8131%
+Weighted Recall:     98.8000%
+Weighted F1-Score:   98.8035%
+
+Per-Class Metrics:
+              precision    recall  f1-score   support
+
+     Arborio     0.9733    0.9733    0.9733       150
+     Basmati     1.0000    0.9933    0.9967       150
+      Ipsala     1.0000    1.0000    1.0000       150
+     Jasmine     0.9673    0.9867    0.9769       150
+   Karacadag     1.0000    0.9867    0.9933       150
+
+    accuracy                         0.9880       750
+   macro avg     0.9881    0.9880    0.9880       750
+weighted avg     0.9881    0.9880    0.9880       750
+

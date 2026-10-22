@@ -1,0 +1,111 @@
+{
+    "model_architecture": "MobileNetV2",
+    "model_weights_file": "rice_quality_mobilenetv2.pth",
+    "total_test_samples": 613,
+    "test_accuracy": 0.7537,
+    "macro_metrics": {
+        "precision": 0.7576,
+        "recall": 0.7879,
+        "f1_score": 0.7632
+    },
+    "weighted_metrics": {
+        "precision": 0.787,
+        "recall": 0.7537,
+        "f1_score": 0.758
+    },
+    "per_class_metrics": {
+        "Broken": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1_score": 0.75,
+            "support": 80
+        },
+        "Chalky": {
+            "precision": 0.5728,
+            "recall": 0.8252,
+            "f1_score": 0.6762,
+            "support": 143
+        },
+        "Stained": {
+            "precision": 0.8191,
+            "recall": 0.8953,
+            "f1_score": 0.8556,
+            "support": 86
+        },
+        "Whole": {
+            "precision": 0.8884,
+            "recall": 0.6809,
+            "f1_score": 0.7709,
+            "support": 304
+        }
+    },
+    "confusion_matrix": [
+        [
+            60,
+            7,
+            8,
+            5
+        ],
+        [
+            6,
+            118,
+            2,
+            17
+        ],
+        [
+            2,
+            3,
+            77,
+            4
+        ],
+        [
+            12,
+            78,
+            7,
+            207
+        ]
+    ],
+    "classes": [
+        "Broken",
+        "Chalky",
+        "Stained",
+        "Whole"
+    ],
+    "quality_grading_layer": {
+        "Whole": {
+            "condition": "Healthy / Intact",
+            "quality_grade": "A",
+            "quality_level": "Excellent",
+            "quality_description": "Visually healthy, fully formed intact grain with no structural or color defects.",
+            "defects_detected": []
+        },
+        "Chalky": {
+            "condition": "Chalky Grain",
+            "quality_grade": "B",
+            "quality_level": "Acceptable",
+            "quality_description": "Acceptable commercial grade with visible chalkiness (opaque white starch accumulation).",
+            "defects_detected": [
+                "Chalky endosperm defect"
+            ]
+        },
+        "Broken": {
+            "condition": "Broken Grain",
+            "quality_grade": "C",
+            "quality_level": "Lower Quality",
+            "quality_description": "Lower commercial quality due to physical fractures and partial length reduction.",
+            "defects_detected": [
+                "Mechanical fracture / Broken grain"
+            ]
+        },
+        "Stained": {
+            "condition": "Discolored / Stained",
+            "quality_grade": "D",
+            "quality_level": "Poor Quality",
+            "quality_description": "Poor quality grain exhibiting visible surface discoloration, staining, or fungal blemish.",
+            "defects_detected": [
+                "Severe discoloration / Staining"
+            ]
+        }
+    },
+    "disclaimer": "Quality grade is a derived visual-grade classification based on documented defect categories; it is not an original dataset label."
+}

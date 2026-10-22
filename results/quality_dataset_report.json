@@ -1,0 +1,89 @@
+{
+    "dataset_name": "SmartRice AI - Rice Grain Defect & Quality Dataset",
+    "original_location": "C:\\Kowsi\\final year\\ml\\datasets\\rice_dataset",
+    "processed_location": "C:\\Kowsi\\final year\\processed_quality_dataset",
+    "total_images_scanned": 6598,
+    "corrupted_image_count": 0,
+    "duplicate_images_removed": 479,
+    "total_unique_images": 6119,
+    "image_formats": {
+        "PNG": 6598
+    },
+    "image_dimensions": {
+        "400x400": 1740,
+        "400x399": 1703,
+        "399x400": 1596,
+        "399x399": 1559
+    },
+    "color_channels": {
+        "RGB": 6598
+    },
+    "class_distribution_unique": {
+        "Broken": 798,
+        "Chalky": 1428,
+        "Stained": 856,
+        "Whole": 3037
+    },
+    "split_counts": {
+        "train": {
+            "Broken": 638,
+            "Chalky": 1142,
+            "Stained": 684,
+            "Whole": 2429
+        },
+        "validation": {
+            "Broken": 80,
+            "Chalky": 143,
+            "Stained": 86,
+            "Whole": 304
+        },
+        "test": {
+            "Broken": 80,
+            "Chalky": 143,
+            "Stained": 86,
+            "Whole": 304
+        },
+        "train_total": 4893,
+        "validation_total": 613,
+        "test_total": 613
+    },
+    "quality_grading_layer": {
+        "Whole": {
+            "condition": "Healthy / Intact",
+            "quality_grade": "A",
+            "quality_level": "Excellent",
+            "quality_description": "Visually healthy, fully formed intact grain with no structural or color defects.",
+            "defects_detected": []
+        },
+        "Chalky": {
+            "condition": "Chalky Grain",
+            "quality_grade": "B",
+            "quality_level": "Acceptable",
+            "quality_description": "Acceptable commercial grade with visible chalkiness (opaque white starch accumulation).",
+            "defects_detected": [
+                "Chalky endosperm defect"
+            ]
+        },
+        "Broken": {
+            "condition": "Broken Grain",
+            "quality_grade": "C",
+            "quality_level": "Lower Quality",
+            "quality_description": "Lower commercial quality due to physical fractures and partial length reduction.",
+            "defects_detected": [
+                "Mechanical fracture / Broken grain"
+            ]
+        },
+        "Stained": {
+            "condition": "Discolored / Stained",
+            "quality_grade": "D",
+            "quality_level": "Poor Quality",
+            "quality_description": "Poor quality grain exhibiting visible surface discoloration, staining, or fungal blemish.",
+            "defects_detected": [
+                "Severe discoloration / Staining"
+            ]
+        }
+    },
+    "disclaimer": "Quality grade is a derived visual-grade classification based on documented defect categories; it is not an original dataset label.",
+    "data_leakage_verified": true,
+    "random_seed": 42
+}

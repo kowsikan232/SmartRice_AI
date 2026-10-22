@@ -1,0 +1,54 @@
+{
+    "dataset_name": "SmartRice AI - Rice Variety Classification Dataset",
+    "original_location": "C:\\Kowsi\\final year\\ml\\datasets\\rice_varieties",
+    "processed_location": "C:\\Kowsi\\final year\\processed_dataset",
+    "total_images_scanned": 7500,
+    "corrupted_image_count": 0,
+    "corrupted_images": [],
+    "duplicate_images_removed": 3,
+    "total_unique_images": 7497,
+    "image_formats": {
+        "JPEG": 7500
+    },
+    "image_dimensions": {
+        "250x250": 7500
+    },
+    "color_channels": {
+        "RGB": 7500
+    },
+    "class_distribution_unique": {
+        "Arborio": 1500,
+        "Basmati": 1500,
+        "Ipsala": 1497,
+        "Jasmine": 1500,
+        "Karacadag": 1500
+    },
+    "split_counts": {
+        "train": {
+            "Arborio": 1200,
+            "Basmati": 1200,
+            "Ipsala": 1197,
+            "Jasmine": 1200,
+            "Karacadag": 1200
+        },
+        "validation": {
+            "Arborio": 150,
+            "Basmati": 150,
+            "Ipsala": 150,
+            "Jasmine": 150,
+            "Karacadag": 150
+        },
+        "test": {
+            "Arborio": 150,
+            "Basmati": 150,
+            "Ipsala": 150,
+            "Jasmine": 150,
+            "Karacadag": 150
+        },
+        "train_total": 5997,
+        "validation_total": 750,
+        "test_total": 750
+    },
+    "data_leakage_verified": true,
+    "random_seed": 42
+}
