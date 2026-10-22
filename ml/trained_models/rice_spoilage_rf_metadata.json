@@ -1,0 +1,69 @@
+{
+  "model_type": "RandomForestClassifier",
+  "target": "spoilage_risk",
+  "features": [
+    "rice_variety",
+    "temperature",
+    "humidity",
+    "moisture_content",
+    "storage_duration_days",
+    "co2",
+    "o2"
+  ],
+  "classes": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "test_accuracy": 0.9744444444444444,
+  "classification_report": {
+    "High": {
+      "precision": 0.9803439803439803,
+      "recall": 0.9803439803439803,
+      "f1-score": 0.9803439803439803,
+      "support": 407.0
+    },
+    "Low": {
+      "precision": 0.9948849104859335,
+      "recall": 0.9873096446700508,
+      "f1-score": 0.9910828025477707,
+      "support": 394.0
+    },
+    "Medium": {
+      "precision": 0.8725490196078431,
+      "recall": 0.898989898989899,
+      "f1-score": 0.8855721393034826,
+      "support": 99.0
+    },
+    "accuracy": 0.9744444444444444,
+    "macro avg": {
+      "precision": 0.9492593034792524,
+      "recall": 0.9555478413346433,
+      "f1-score": 0.952332974065078,
+      "support": 900.0
+    },
+    "weighted avg": {
+      "precision": 0.9748522307473714,
+      "recall": 0.9744444444444444,
+      "f1-score": 0.9746202955498515,
+      "support": 900.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      399,
+      0,
+      8
+    ],
+    [
+      0,
+      389,
+      5
+    ],
+    [
+      8,
+      2,
+      89
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "model_type": "RandomForestRegressor",
+  "target": "shelf_life_days",
+  "features": [
+    "rice_variety",
+    "temperature",
+    "humidity",
+    "moisture_content",
+    "storage_duration_days",
+    "co2",
+    "o2"
+  ],
+  "metrics": {
+    "mae": 4.683452222222222,
+    "mse": 84.68644861666667,
+    "rmse": 9.202524035103993,
+    "r2_score": 0.9874378503916081
+  }
+}

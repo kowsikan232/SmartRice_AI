@@ -1,0 +1,32 @@
+
+# Frontend dependencies and build output
+node_modules/
+frontend/dist/
+
+# Python virtual environments
+backend/venv/
+backend/.venv/
+venv/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Large datasets
+ml/datasets.zip
+ml/datasets/rice_dataset.rar
+
+# Local datasets and generated outputs
+ml/datasets/
+processed_dataset/
+processed_quality_dataset/
+report_snapshots/
+results/
+sample_test_images/
+

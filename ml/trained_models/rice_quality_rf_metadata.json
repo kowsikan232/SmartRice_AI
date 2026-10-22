@@ -1,0 +1,69 @@
+{
+  "model_type": "RandomForestClassifier",
+  "target": "quality",
+  "features": [
+    "rice_variety",
+    "temperature",
+    "humidity",
+    "moisture_content",
+    "storage_duration_days",
+    "co2",
+    "o2"
+  ],
+  "classes": [
+    "Good",
+    "Medium",
+    "Poor"
+  ],
+  "test_accuracy": 0.9811111111111112,
+  "classification_report": {
+    "Good": {
+      "precision": 0.9874371859296482,
+      "recall": 0.9974619289340102,
+      "f1-score": 0.9924242424242424,
+      "support": 394.0
+    },
+    "Medium": {
+      "precision": 0.9369369369369369,
+      "recall": 0.9122807017543859,
+      "f1-score": 0.9244444444444444,
+      "support": 114.0
+    },
+    "Poor": {
+      "precision": 0.9872122762148338,
+      "recall": 0.9846938775510204,
+      "f1-score": 0.9859514687100894,
+      "support": 392.0
+    },
+    "accuracy": 0.9811111111111112,
+    "macro avg": {
+      "precision": 0.9705287996938062,
+      "recall": 0.9648121694131389,
+      "f1-score": 0.9676067185262588,
+      "support": 900.0
+    },
+    "weighted avg": {
+      "precision": 0.980942527048119,
+      "recall": 0.9811111111111112,
+      "f1-score": 0.9809942154624147,
+      "support": 900.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      393,
+      1,
+      0
+    ],
+    [
+      5,
+      104,
+      5
+    ],
+    [
+      0,
+      6,
+      386
+    ]
+  ]
+}
